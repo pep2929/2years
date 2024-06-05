@@ -13,6 +13,7 @@
             font-family: Arial, sans-serif;
             background-color: #9370DB; /* Dark purple background */
             overflow-y: auto; /* Enable vertical scrolling */
+            position: relative;
         }
         .container {
             text-align: center;
@@ -55,32 +56,29 @@
         }
         .heart {
             position: absolute;
-            bottom: 0;
-            font-size: 30px;
+            font-size: 40px;
             color: red;
-            animation: float 5s infinite;
+            animation: bounce 10s infinite;
         }
-        @keyframes float {
-            0% {
-                bottom: 0;
-                opacity: 1;
-                transform: translateX(0);
+        @keyframes bounce {
+            0%, 100% {
+                transform: translate(0, 0);
             }
-            100% {
-                bottom: 100%;
-                opacity: 0;
-                transform: translateX(-30px); /* Add slight horizontal movement */
+            25% {
+                transform: translate(80vw, 0);
+            }
+            50% {
+                transform: translate(80vw, 80vh);
+            }
+            75% {
+                transform: translate(0, 80vh);
             }
         }
-        .heart:nth-child(1) { left: 10%; animation-delay: 0s; }
-        .heart:nth-child(2) { left: 20%; animation-delay: 1s; }
-        .heart:nth-child(3) { left: 30%; animation-delay: 2s; }
-        .heart:nth-child(4) { left: 40%; animation-delay: 3s; }
-        .heart:nth-child(5) { left: 50%; animation-delay: 4s; }
-        .heart:nth-child(6) { left: 60%; animation-delay: 5s; }
-        .heart:nth-child(7) { left: 70%; animation-delay: 6s; }
-        .heart:nth-child(8) { left: 80%; animation-delay: 7s; }
-        .heart:nth-child(9) { left: 90%; animation-delay: 8s; }
+        .heart:nth-child(1) { animation-duration: 11s; }
+        .heart:nth-child(2) { animation-duration: 12s; }
+        .heart:nth-child(3) { animation-duration: 13s; }
+        .heart:nth-child(4) { animation-duration: 14s; }
+        .heart:nth-child(5) { animation-duration: 15s; }
         .spinning-heart {
             position: relative;
             font-size: 80px;
@@ -102,27 +100,15 @@
             <input type="password" id="passwordInput" placeholder="Enter Password">
             <button id="enterButton">Enter</button>
         </div>
-        <div id="message">Hi my darling, my princesita, the love of my life, happy 2 year anniversary, I thought of doing something different so I created a website for you that only you and I can go into. Our love is now on the cloud which makes sense because every time I'm with you I feel like I'm flying, like I'm touching the sky (cornyyyyyyyy) but it's true, and just like our love, this website cannot be taken down and it will never cease to exist, just like you are stuck with me forever. I hope you enjoy this my love. I love you and I can't live without you, you have helped me immensively, thank you for making me a better person.</div>
+        <div id="message">Hi my darling, my princesita, the love of my life, happy 2 year anniversary, I thought of doing something different so I created a website for you that only you and I can go into. Our love is now on the cloud which makes sense because every time I'm with you I feel like I'm flying, like I'm touching the sky (cornyyyyyyyy) but it's true, and just like our love, this website cannot be taken down and it will never cease to exist just like our love, you are stuck with me forever heheh. I hope you enjoy this my love. I love you and I can't live without you, you have helped me immensely, thank you for making me a better person.</div>
         <div id="animation">
             <img src="https://i.imgur.com/HazyBBo.gif" alt="Teddy Bears Hugging">
             <img src="https://i.imgur.com/pn7Ydgp.gif" alt="Milk and Mocha Bears Cute">
-            <div class="heart" style="font-size: 20px;">❤️</div>
-            <div class="heart" style="font-size: 25px;">❤️</div>
-            <div class="heart" style="font-size: 30px;">❤️</div>
-            <div class="heart" style="font-size: 35px;">❤️</div>
-            <div class="heart" style="font-size: 40px;">❤️</div>
-            <div class="heart" style="font-size: 45px;">❤️</div>
-            <div class="heart" style="font-size: 50px;">❤️</div>
-            <div class="heart" style="font-size: 55px;">❤️</div>
-            <div class="heart" style="font-size: 60px;">❤️</div>
-            <div class="heart" style="font-size: 65px;">❤️</div>
-            <div class="heart" style="font-size: 70px;">❤️</div>
-            <div class="heart" style="font-size: 75px;">❤️</div>
-            <div class="heart" style="font-size: 80px;">❤️</div>
-            <div class="heart" style="font-size: 85px;">❤️</div>
-            <div class="heart" style="font-size: 90px;">❤️</div>
-            <div class="heart" style="font-size: 95px;">❤️</div>
-            <div class="heart" style="font-size: 100px;">❤️</div>
+            <div class="heart">❤️</div>
+            <div class="heart">❤️</div>
+            <div class="heart">❤️</div>
+            <div class="heart">❤️</div>
+            <div class="heart">❤️</div>
             <div class="spinning-heart">❤️</div>
         </div>
     </div>
