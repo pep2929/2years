@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secret Message</title>
+    <style>
+        body, html {
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #9370DB; /* Dark purple background */
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+        .container {
+            text-align: center;
+            position: relative;
+        }
+        #passwordContainer {
+            margin-top: 20px;
+        }
+        #passwordInput {
+            padding: 10px;
+            font-size: 16px;
+        }
+        #enterButton {
+            padding: 10px 20px;
+            font-size: 16px;
+            margin-top: 10px;
+        }
+        #message {
+            display: none;
+            font-size: 18px;
+            margin-top: 20px;
+            color: white;
+        }
+        #animation {
+            display: none;
+            margin-top: 20px;
+            position: relative;
+            width: 100%;
+            height: 300px;
+        }
+        #animation img {
+            width: 200px;
+            height: 200px;
+            margin: 10px;
+        }
+        .heart {
+            position: absolute;
+            font-size: 30px;
+            color: red;
+            animation: float 2s infinite;
+        }
+        @keyframes float {
+            0% {
+                bottom: 0;
+                opacity: 1;
+            }
+            100% {
+                bottom: 100%;
+                opacity: 0;
+            }
+        }
+        .heart:nth-child(1) { left: 10%; animation-delay: 0s; }
+        .heart:nth-child(2) { left: 20%; animation-delay: 0.1s; }
+        .heart:nth-child(3) { left: 30%; animation-delay: 0.2s; }
+        .heart:nth-child(4) { left: 40%; animation-delay: 0.3s; }
+        .heart:nth-child(5) { left: 50%; animation-delay: 0.4s; }
+        .heart:nth-child(6) { left: 60%; animation-delay: 0.5s; }
+        .heart:nth-child(7) { left: 70%; animation-delay: 0.6s; }
+        .heart:nth-child(8) { left: 80%; animation-delay: 0.7s; }
+        .heart:nth-child(9) { left: 90%; animation-delay: 0.8s; }
+        .heart:nth-child(10) { left: 15%; animation-delay: 0.9s; }
+        .heart:nth-child(11) { left: 25%; animation-delay: 1s; }
+        .heart:nth-child(12) { left: 35%; animation-delay: 1.1s; }
+        .heart:nth-child(13) { left: 45%; animation-delay: 1.2s; }
+        .heart:nth-child(14) { left: 55%; animation-delay: 1.3s; }
+        .heart:nth-child(15) { left: 65%; animation-delay: 1.4s; }
+        .heart:nth-child(16) { left: 75%; animation-delay: 1.5s; }
+        .heart:nth-child(17) { left: 85%; animation-delay: 1.6s; }
+        .heart:nth-child(18) { left: 95%; animation-delay: 1.7s; }
+        .heart:nth-child(19) { left: 5%; animation-delay: 1.8s; }
+        .heart:nth-child(20) { left: 95%; animation-delay: 1.9s; }
+        .heart:nth-child(21) { left: 15%; animation-delay: 2s; }
+        .heart:nth-child(22) { left: 85%; animation-delay: 2.1s; }
+        .heart:nth-child(23) { left: 25%; animation-delay: 2.2s; }
+        .heart:nth-child(24) { left: 75%; animation-delay: 2.3s; }
+        .heart:nth-child(25) { left: 35%; animation-delay: 2.4s; }
+        .heart:nth-child(26) { left: 65%; animation-delay: 2.5s; }
+        .heart:nth-child(27) { left: 45%; animation-delay: 2.6s; }
+        .heart:nth-child(28) { left: 55%; animation-delay: 2.7s; }
+        .spinning-heart {
+            position: absolute;
+            font-size: 80px;
+            color: red;
+            animation: spin 4s infinite linear;
+            bottom: 10px;
+            left: calc(50% - 40px); /* Center horizontally */
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Enter Password Princesita</h1>
+        <p>Hint: We invented a word and we made it Italian</p>
+        <div id="passwordContainer">
+            <input type="password" id="passwordInput" placeholder="Enter Password">
+            <button id="enterButton">Enter</button>
+        </div>
+        <div id="message">Hi my darling, my princesita, the love of my life, happy 2 year anniversary, I thought of doing something different so I created a website for you that only you and I can go in. Our love is now on the cloud which makes sense because every time I'm with you I feel like I'm flying, like I'm touching the sky (cornyyyyyyyy) but it's true, and just like our love, this website cannot be taken down so this will never ever disappear, just like you are stuck with me forever. I hope you enjoy this my love. I love you and I couldn't live without you.</div>
+        <div id="animation">
+            <img src="https://i.imgur.com/HazyBBo.gif" alt="Teddy Bears Hugging">
+            <img src="https://i.imgur.com/pn7Ydgp.gif" alt="Milk and Mocha Bears Cute">
+            <div class="heart" style="font-size: 20px;">❤️</div>
+            <div class="heart" style="font-size: 25px;">❤️</div>
+            <div class="heart" style="font-size: 30px;">❤️</div>
+            <div class="heart" style="font-size: 35px;">❤️</div>
+            <div class="heart" style="font-size: 40px;">❤️</div>
+            <div class="heart" style="font-size: 45px;">❤️</div>
+            <div class="heart" style="font-size: 50px;">❤️</div>
+            <div class="heart" style="font-size: 55px;">❤️</div>
+            <div class="heart" style="font-size: 60px;">❤️</div>
+            <div class="heart" style="font-size: 65px;">❤️</div>
+            <div class="heart" style="font-size: 70px;">❤️</div>
+            <div class="heart" style="font-size: 75px;">❤️</div>
+            <div class="heart" style="font-size: 80px;">❤️</div>
+            <div class="heart" style="font-size: 85px;">❤️</div>
+            <div class="heart" style="font-size: 90px;">❤️</div>
+            <div class="heart" style="font-size: 95px;">❤️</div>
+            <div class="heart" style="font-size: 100px;">❤️</div>
+            <div class="spinning-heart">❤️</div>
+        </div>
+    </div>
+
+    <script>
+        const password = "pochomo";
+        const enterButton = document.getElementById("enterButton");
+        const passwordInput = document.getElementById("passwordInput");
+        const passwordContainer = document.getElementById("passwordContainer");
+        const message = document.getElementById("message");
+        const animation = document.getElementById("animation");
+        const spinningHeart = document.querySelector('.spinning-heart');
+
+        enterButton.addEventListener("click", function() {
+            if (passwordInput.value === password) {
+                passwordContainer.style.display = "none";
+                message.style.display = "block";
+                setTimeout(function() {
+                    animation.style.display = "block";
+                    spinningHeart.style.display = "block";
+                }, 2000);
+            } else {
+                alert("Incorrect password. Please try again.");
+            }
+        });
+    </script>
+</body>
+</html>
